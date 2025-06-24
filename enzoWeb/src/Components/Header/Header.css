@@ -1,0 +1,70 @@
+.container{
+display: flex;   
+height: 100px;
+}
+.Imagen{
+    width: 20%;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+.Imagen img{
+  width: 100px;  
+  padding: 0;
+  margin-left: 20px;
+}
+.navbar{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.navbar a{
+  margin: 15px;
+  font-size: 14px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-family: "Cabin", sans-serif;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+a:focus,
+a:hover {
+  color: #fff;
+}
+a:focus:after,
+a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #4eeba9;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.navbar a.inicio {
+  color: rgb(213, 100, 241) !important;
+}
+
+.relleno{
+    width: 20%;
+}
+
+
