@@ -1,17 +1,25 @@
 import "./Header.css"
-export default function Header (){
-    return (<>
-    
-    <div className="container" >
-    <div className="Imagen"><img src="../../../public/img/logoBlanco.png" alt="" /></div>
-    <div className="navbar">
-        <a href="/Header" className="inicio">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>            
+import { useState } from "react"
+
+export default function Header() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <div className="container">
+      <div className="Imagen">
+        <img src="/img/logoBlanco.png" alt="logo" />
+      </div>
+
+      <div className={`navbar ${open ? "open" : ""}`}>
+        <a href="#home" className="inicio" onClick={() => setOpen(false)}>Inicio</a>
+        <a href="#sobreMi" onClick={() => setOpen(false)}>Sobre mí</a>
+        <a href="#proyectos" onClick={() => setOpen(false)}>Proyectos</a>
+        <a href="#contacto" onClick={() => setOpen(false)}>Contacto</a>
+      </div>
+
+      <div className="menu-btn" onClick={() => setOpen(!open)}>
+        <div className={`hamburger ${open ? "open" : ""}`}></div>
+      </div>
     </div>
-    <div className="relleno"></div>
-    </div>
-    
-    </>)
+  )
 }
