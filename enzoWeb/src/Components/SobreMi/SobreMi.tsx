@@ -34,7 +34,7 @@ export default function SobreMi(){
                         <div className="tracker tr-24"></div>
                         <div className="tracker tr-25"></div>
                            <div id="card">
-                             <div className="title">Enzo Ibarra <br />Developer</div>
+                             <div className="title">Enzo Ibarra <br />22 Años</div>
                              <div className="subtitle">
                                <img src="../../../public/img/perfil.png" alt="" id="prompt"/>
                              </div>
@@ -48,7 +48,7 @@ export default function SobreMi(){
                 <h6>Desarrollo web</h6>
                 <p>
                     Soy tecnico en programacion, recibido en la Universidad Tecnologica 
-                    Nacional sede Mendoza-Argentina, Desarrollo backend y frontend, Diseñador UX/UI,
+                    Nacional sede Mendoza-Argentina, Desarrollo backend y frontend, Diseñador UX/UI.
                     
                 </p>
                </div>

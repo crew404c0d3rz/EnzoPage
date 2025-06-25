@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60vh;
 }
 .titulo{
     width: 100%;
     text-align: center;
+   
 }
 h1{
 font-family: "Cabin", sans-serif;
