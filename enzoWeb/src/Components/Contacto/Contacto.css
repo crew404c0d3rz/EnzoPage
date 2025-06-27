@@ -96,3 +96,6 @@
 .social-icons a[data-social="youtube"] {
   background-color: #ff0000;
 }
+.social-icons a[data-social="whatsapp"] {
+  background-color: #50c168;
+}
