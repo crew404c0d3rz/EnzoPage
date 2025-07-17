@@ -129,3 +129,61 @@ width: 30px;
 #descri{
   color: #9a9a9a;
 }
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+  }
+
+  .info, .tecnologia {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .infoTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .infoParrafo {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .infoButons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #cv, #git {
+    width: 80%;
+  }
+
+  .tecnologia {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .tecno1,
+  .tecno2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartita1 {
+    max-width: 90%;
+    width: 80%;
+  }
+
+  .titulo h1 {
+    font-size: 2.2rem;
+  }
+
+  .descripcion p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
