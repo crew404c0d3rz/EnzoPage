@@ -1,56 +1,82 @@
 .proyectos {
+  padding: 100px 20px;
+  text-align: center;
   background-color: #0d1117;
   color: white;
-  padding: 80px 20px;
-  text-align: center;
 }
 
-.titulo-seccion {
+.proyectos h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  background: linear-gradient(90deg, #4eeba9, #00c9ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.grid-proyectos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  justify-items: center;
+#mi {
+  color: #ffffff;
 }
 
-.card-proyecto {
-  background-color: #1f1f1f;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-  max-width: 340px;
-}
-
-.card-proyecto:hover {
-  transform: translateY(-5px);
-}
-
-.card-proyecto img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.contenido-proyecto {
-  padding: 20px;
-}
-
-.contenido-proyecto h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+#portfolio {
   color: #4eeba9;
 }
 
-.contenido-proyecto p {
-  font-size: 0.95rem;
-  color: #ccc;
-  line-height: 1.5;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+  min-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.usado {
+  background-color: #333;
+  color:#9a9a9a;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+
+#parraf{
+  color:#9a9a9a;
 }

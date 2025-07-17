@@ -29,12 +29,7 @@ export default function Contacto() {
               <span>Instagram</span>
             </a>
           </li>
-          <li>
-            <a href="https://youtube.com" target="_blank" data-social="youtube" rel="noreferrer">
-              <i className="bi bi-youtube"></i>
-              <span>YouTube</span>
-            </a>
-          </li>
+          
           <li>
               <a
                 href="https://wa.me/5492616274027?text=Hola%20Enzo!%20Quiero%20hacerte%20una%20consulta%20/%20propuesta%20sobre...%20"

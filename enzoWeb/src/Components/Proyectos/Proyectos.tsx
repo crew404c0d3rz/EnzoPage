@@ -1,39 +1,74 @@
 import "./Proyectos.css"
 
-export default function Proyectos(){
+export default function Proyectos() {
+  return (
+    <section className="proyectos" id="proyectos">
+      <h1><span id="mi">Mi </span><span id="portfolio">Portfolio</span></h1>
 
+      <div className="cards-container">
 
-    return(<section className="proyectos" id="proyectos">
-      <h2 className="titulo-seccion">Mis Proyectos</h2>
-      <div className="grid-proyectos">
-
-        {/* Proyecto 1 */}
-        <div className="card-proyecto">
-          <img src="/img/logo_buenSabor.png" alt="Proyecto 1" />
-          <div className="contenido-proyecto">
-            <h3>El buen sabor</h3>
-            <p>Sistema de gestion de un restaurante, Api rest con Java Springboot, ReacNode y auth como control de accesos</p>
+        {/* Carta 1 */}
+        <div className="card">
+          <div className="carousel">
+            <img src="/img/logSabor.png" alt="Vista 1" />
+            <img src="/img/cajero.png" alt="Vista 2" />
+            <img src="/img/empleados.png" alt="Vista 3" />
+          </div>
+          <div className="card-content">
+            <h2>Aplicación Web "Buen Sabor"</h2>
+            <p id="parraf">Gestión integral para restaurante: pedidos, productos, stock y más.</p>
+            <div className="tecnologias">
+              <span className="usado">React</span>
+              <span className="usado">Spring Boot</span>
+              <span className="usado">MySQL</span>
+              <span className="usado">CSS</span>
+              <span className="usado">Axios</span>
+              <span className="usado">JWT</span>
+            </div>
           </div>
         </div>
 
-        {/* Proyecto 2 */}
-        <div className="card-proyecto">
-          <img src="/img/logoBlanco.png" alt="Proyecto 2" />
-          <div className="contenido-proyecto">
-            <h3>Página personal</h3>
-            <p>Aplicación ReacNode profesional para explayar informacion personal</p>
+        {/* Carta 2 */}
+        <div className="card">
+          <div className="carousel">
+            <img src="/img/landingMosh.png" alt="Vista 1" />
+            <img src="/img/food.png" alt="Vista 2" />
+            <img src="/img/carrito.png" alt="Vista 3" />
+          </div>
+          <div className="card-content">
+            <h2>E-commerce hamburguesas</h2>
+            <p id="parraf">Sitio web para venta de productos electrónicos con carrito y pagos simulados.</p>
+            <div className="tecnologias">
+              <span className="usado">HTML</span>
+              <span className="usado">CSS</span>
+              <span className="usado">JavaScript</span>
+              <span className="usado">React</span>
+              <span className="usado">Spring Boot</span>
+              <span className="usado">MySQL</span>
+            </div>
           </div>
         </div>
 
-        {/* Proyecto 3 */}
-        <div className="card-proyecto">
-          <img src="/img/proyecto3.jpg" alt="Proyecto 3" />
-          <div className="contenido-proyecto">
-            <h3>Portfolio Web</h3>
-            <p>Sitio web personal hecho con Vite, React y Tailwind, completamente responsive.</p>
+        {/* Carta 3 */}
+        <div className="card">
+          <div className="carousel">
+            <img src="/img/mipag.png" alt="Vista 1" />
+            <img src="/img/sobreMi.png" alt="Vista 2" />
+            <img src="/img/contactame.png" alt="Vista 3" />
+
+          </div>
+          <div className="card-content">
+            <h2>Portfolio Personal</h2>
+            <p id="parraf">Mi sitio personal donde muestro mis proyectos, habilidades y contacto profesional.</p>
+            <div className="tecnologias">
+              <span className="usado">React</span>
+              <span className="usado">CSS</span>
+              <span className="usado">HTML</span>
+            </div>
           </div>
         </div>
 
       </div>
-    </section>)
+    </section>
+  );
 }

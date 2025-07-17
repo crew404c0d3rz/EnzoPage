@@ -1,10 +1,10 @@
-/* Header fijo */
+/* --- HEADER GENERAL --- */
 .container {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #1e1e1e;
+  background-color:rgba(21, 4, 49, 1);
   width: 100%;
   height: 100px;
   display: flex;
@@ -19,15 +19,15 @@
   width: 100px;
 }
 
-/* Navbar desktop */
+/* Navbar Desktop */
 .navbar {
   display: flex;
-  justify-content: center; /* ✅ centrado horizontal */
+  justify-content: end;
   align-items: center;
+  margin-right: 50px;
   gap: 30px;
   flex: 1;
 }
-
 
 .navbar a {
   color: #e1e1e1;
@@ -38,10 +38,12 @@
   position: relative;
   transition: color 0.4s;
 }
+
 .navbar a:hover,
 .navbar a:focus {
   color: #fff;
 }
+
 .navbar a:after {
   content: "";
   position: absolute;
@@ -52,6 +54,7 @@
   background-color: #4eeba9;
   transition: width 0.4s, left 0.4s;
 }
+
 .navbar a:hover:after {
   width: 100%;
   left: 0;
@@ -78,42 +81,46 @@
   margin: 5px 0;
   transition: all 0.4s ease-in-out;
 }
+
 .hamburger.open {
   background: transparent;
 }
+
 .hamburger.open::before {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.open::after {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
 .hamburger.open::before,
 .hamburger.open::after {
   background-color: #4eeba9;
 }
 
-/* Responsive */
+/* -------- RESPONSIVE NAV -------- */
 @media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+    align-items: flex-start;
+  }
+
   .navbar {
-    position: absolute;
-    top: 100px;
-    left: 0; /* ✅ para que tome todo el ancho desde el inicio */
     width: 100%;
     flex-direction: column;
     background-color: #1e1e1e;
-    height: 0;
     overflow: hidden;
-    transition: height 0.4s ease;
+    max-height: 0;
+    transition: max-height 0.4s ease;
   }
 
-
-
   .navbar.open {
-  height: 200px;
-  padding: 20px 0;
-  justify-content: center; /* ✅ centra verticalmente */
-  align-items: center;
-}
+    max-height: 500px; /* valor alto para dejar lugar */
+    padding: 20px 0;
+  }
 
   .navbar a {
     padding: 10px 0;
