@@ -15,11 +15,20 @@ export default function Header() {
       </div>
 
       <div className={`navbar ${open ? "open" : ""}`}>
-        <a href="#home" className="inicio" onClick={() => setOpen(false)}>Inicio</a>
-        <a href="#sobreMi" onClick={() => setOpen(false)}>Sobre mí</a>
-        <a href="#proyectos" onClick={() => setOpen(false)}>Proyectos</a>
-        <a href="#contacto" onClick={() => setOpen(false)}>Contacto</a>
+        <a href="#home" className="inicio" onClick={() => setOpen(false)}>
+          Inicio
+        </a>
+        <a href="#sobreMi" onClick={() => setOpen(false)}>
+          Sobre mí
+        </a>
+        <a href="#proyectos" onClick={() => setOpen(false)}>
+          Proyectos
+        </a>
+        <a href="#contacto" onClick={() => setOpen(false)}>
+          Contacto
+        </a>
       </div>
     </div>
   );
 }
+
