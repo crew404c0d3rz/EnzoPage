@@ -41,6 +41,12 @@ export default function Contacto() {
                 <span>WhatsApp</span>
               </a>
           </li>
+          <li>
+            <a href="mailto:ibarraenzo139002@gmail.com" target="_blank" data-social="email" rel="noreferrer">
+              <i className="bi bi-envelope-at-fill"></i>
+              <span>E-mail</span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>

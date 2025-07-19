@@ -99,3 +99,6 @@
 .social-icons a[data-social="whatsapp"] {
   background-color: #50c168;
 }
+.social-icons a[data-social="email"] {
+  background-color: #f32b2b;
+}

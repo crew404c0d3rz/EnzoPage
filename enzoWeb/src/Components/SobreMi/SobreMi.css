@@ -1,9 +1,11 @@
 .sobre-mi {
 
-  padding: 150px 20px;
+  padding: 0px 20px;
   background-color: #0e1726;
   color: #eaeaea;
   font-family: "Cabin", sans-serif;
+  padding-bottom: 300px;
+  padding-top: 250px;
 }
 
 .titulo {
@@ -101,7 +103,7 @@
   width: 50%;
   align-items: center;
   justify-content: center;
-  margin-left: 150px;
+  margin-left: 300px;
   margin-top: 10px;
 }
 .tecno1{

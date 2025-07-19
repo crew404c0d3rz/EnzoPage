@@ -15,8 +15,12 @@ export default function SobreMi() {
       <div className="infoParrafo">Mi nombre es Enzo Ibarra, soy un desarrollador full-stack y diseñador web dedicado que disfruta creando soluciones digitales innovadoras. Con experiencia en tecnologías frontend y backend, doy vida a mis ideas mediante código limpio y diseño creativo.
         Mi pasión reside en crear aplicaciones centradas en el usuario que no solo tengan un aspecto excelente, sino que también ofrezcan una funcionalidad excepcional. Disfruto trabajando con frameworks modernos y siempre me mantengo al día con las últimas tendencias del sector.</div>
           <div className="infoButons">
+            <a href="/src/File/cvEnzo.pdf" download="CV-Enzo-Ibarra.pd">
             <button id="cv">Descargar CV</button>
+            </a>
+            <a href="https://github.com/crew404c0d3rz" target="_blank" data-social="github" rel="noreferrer">
             <button id="git">Mi GitHub</button>
+            </a>
           </div>
       </div>
       <div className="tecnologia">
