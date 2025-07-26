@@ -1,4 +1,4 @@
-/* --- HEADER GENERAL --- */
+
 .container {
   position: fixed;
   top: 0;
@@ -15,13 +15,12 @@
  
 }
 
-/* Logo */
+
 .Imagen img {
   width: 90px;
   padding: 10px;
 }
 
-/* Navbar Desktop */
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -65,12 +64,12 @@
   color: #b382e8;
 }
 
-/* Botón hamburguesa */
+
 .menu-btn {
   display: none;
   cursor: pointer;
   z-index: 1100;
-  padding-right: 20px; /* separación derecha para el botón hamburguesa */
+  padding-right: 20px; 
 }
 
 .hamburger {
@@ -111,12 +110,12 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* -------- RESPONSIVE NAV -------- */
+
 @media (max-width: 768px) {
   .container {
     flex-wrap: nowrap;
     height: 70px;
-    padding: 0 20px; /* padding general para mantener separación a los lados */
+    padding: 0 20px; 
   }
 
   .navbar {
@@ -148,10 +147,10 @@
 
   .menu-btn {
     display: block;
-    padding-right: 40px; /* separación para botón hamburguesa */
+    padding-right: 40px;
   }
   
-  /* Además, agregamos separación a la derecha en los links para que no queden pegados */
+ 
   .navbar a {
     padding-left: 80px;
     padding-right: 80px;
