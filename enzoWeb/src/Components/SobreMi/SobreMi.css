@@ -54,6 +54,7 @@
 }
 .perfil{
  display: flex;
+ margin-top: 80px;
 }
 .info{
   width: 50%;
