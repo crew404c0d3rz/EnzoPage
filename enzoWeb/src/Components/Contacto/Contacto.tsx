@@ -18,7 +18,7 @@ export default function Contacto() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/crew404c0d3rz" target="_blank" data-social="github" rel="noreferrer">
+            <a href="https://github.com/EnzoIbarra05?tab=repositories" target="_blank" data-social="github" rel="noreferrer">
               <i className="bi bi-github"></i>
               <span>GitHub</span>
             </a>
